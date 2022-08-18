@@ -4,9 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:build": "tsc.cmd -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaranCorp/sort.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaranCorp/sort/issues"
+  },
+  "homepage": "https://github.com/TaranCorp/sort#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
 }
