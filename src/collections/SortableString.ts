@@ -1,4 +1,4 @@
-import { BubbleSort, Sortable } from "../sort/BubbleSort";
+import { BubbleSort } from "../sort/BubbleSort";
 
 export class SortableString extends BubbleSort {
     constructor(public data: string) {
