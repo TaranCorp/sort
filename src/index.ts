@@ -13,6 +13,7 @@ numbersList.add(99);
 numbersList.add(-99);
 numbersList.add(0.0001);
 
-numbersList.sort();
+const sorter = new BubbleSort(numbersList);
+sorter.sort();
 
 numbersList.print();

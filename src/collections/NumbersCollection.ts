@@ -1,9 +1,7 @@
-import { BubbleSort, Sortable } from "../sort/BubbleSort";
+import { Sortable } from "../sort/BubbleSort";
 
-export class NumbersCollection extends BubbleSort {
-    constructor(public data: number[]) {    
-        super();
-    }
+export class NumbersCollection implements Sortable {
+    constructor(public data: number[]) {}
 
     get length(): number {
         return this.data.length;

@@ -1,12 +1,10 @@
-import { BubbleSort } from "../sort/BubbleSort";
+import { Sortable } from "../sort/BubbleSort";
 import { Node } from "./Node";
 
-export class LinkedList extends BubbleSort {
+export class LinkedList implements Sortable{
     head: Node | null = null;
 
-    constructor() {
-        super();
-    }
+    constructor() {}
 
     get length() {
         if (!this.head) {
