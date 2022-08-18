@@ -1,9 +1,3 @@
-export interface Sortable {
-    length: number; 
-    swap(firstIndex: number, secondIndex: number): void;
-    compare(firstIndex: number, secondIndex: number): boolean;
-}
-
 export abstract class BubbleSort { 
     abstract length: number; 
     abstract swap(firstIndex: number, secondIndex: number): void;
